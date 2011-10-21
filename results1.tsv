@@ -1,0 +1,86 @@
+Library	Data Size	Compression	Success	Time
+dankogai-js-deflate Level(4)	17755	25.176%	OK	3.35ms
+dankogai-js-deflate Level(5)	17755	24.866%	OK	4.4ms
+dankogai-js-deflate Level(6)	17755	24.816%	OK	4.8ms
+dankogai-js-deflate Level(7)	17755	24.782%	OK	4.1ms
+dankogai-js-deflate Level(8)	17755	24.770%	OK	4.15ms
+onicios-deflate Level(4)	17755	25.176%	OK	5.4ms
+onicios-deflate Level(5)	17755	24.866%	OK	4.6ms
+onicios-deflate Level(6)	17755	24.816%	OK	6.15ms
+onicios-deflate Level(7)	17755	24.782%	OK	5.15ms
+onicios-deflate Level(8)	17755	24.770%	OK	4.8ms
+Stuck-jszip	17755	25.413%	FAILURE	16.35ms
+hiddentao-lzw-async	17755	44.787%	OK	15.3ms
+lzwjs	17755	47.350%	OK	16.95ms
+rozetta-lzw	17755	32.019%	OK	7.1ms
+saw-JS_LZW	17755	32.025%	OK	8.05ms
+jsend	17755	57.623%	FAILURE	8.7ms
+jslzjb	17755	59.899%	OK	1.9ms
+dankogai-js-deflate Level(4)	27877	21.875%	OK	4.45ms
+dankogai-js-deflate Level(5)	27877	21.448%	OK	6.7ms
+dankogai-js-deflate Level(6)	27877	21.351%	OK	6.95ms
+dankogai-js-deflate Level(7)	27877	21.319%	OK	6.5ms
+dankogai-js-deflate Level(8)	27877	21.261%	OK	6.7ms
+onicios-deflate Level(4)	27877	21.875%	OK	4.85ms
+onicios-deflate Level(5)	27877	21.448%	OK	6.2ms
+onicios-deflate Level(6)	27877	21.351%	OK	6.15ms
+onicios-deflate Level(7)	27877	21.319%	OK	6.6ms
+onicios-deflate Level(8)	27877	21.261%	OK	8.5ms
+Stuck-jszip	27877	21.731%	FAILURE	21.5ms
+hiddentao-lzw-async	27877	42.967%	OK	24.9ms
+lzwjs	27877	42.426%	OK	19.2ms
+rozetta-lzw	27877	27.944%	OK	8.4ms
+saw-JS_LZW	27877	27.948%	OK	10.75ms
+jsend	27877	51.767%	FAILURE	12.45ms
+jslzjb	27877	57.754%	OK	1.85ms
+dankogai-js-deflate Level(4)	41902	20.894%	OK	6.45ms
+dankogai-js-deflate Level(5)	41902	20.464%	OK	8.15ms
+dankogai-js-deflate Level(6)	41902	20.340%	OK	10.05ms
+dankogai-js-deflate Level(7)	41902	20.295%	OK	11.15ms
+dankogai-js-deflate Level(8)	41902	20.231%	OK	10.55ms
+onicios-deflate Level(4)	41902	20.894%	OK	8.5ms
+onicios-deflate Level(5)	41902	20.464%	OK	8.5ms
+onicios-deflate Level(6)	41902	20.340%	OK	10.95ms
+onicios-deflate Level(7)	41902	20.295%	OK	9.5ms
+onicios-deflate Level(8)	41902	20.231%	OK	10.85ms
+Stuck-jszip	41902	20.593%	FAILURE	31.5ms
+hiddentao-lzw-async	41902	44.148%	OK	29.35ms
+lzwjs	41902	40.473%	OK	155.15ms
+rozetta-lzw	41902	25.615%	OK	11.5ms
+saw-JS_LZW	41902	25.615%	OK	15.7ms
+jsend	41902	49.508%	FAILURE	15.85ms
+jslzjb	41902	58.052%	OK	3.35ms
+dankogai-js-deflate Level(4)	61549	19.394%	OK	9ms
+dankogai-js-deflate Level(5)	61549	18.961%	OK	10.3ms
+dankogai-js-deflate Level(6)	61549	18.840%	OK	12ms
+dankogai-js-deflate Level(7)	61549	18.788%	OK	12.7ms
+dankogai-js-deflate Level(8)	61549	18.701%	OK	13.8ms
+onicios-deflate Level(4)	61549	19.394%	OK	10.05ms
+onicios-deflate Level(5)	61549	18.961%	OK	11.7ms
+onicios-deflate Level(6)	61549	18.840%	OK	12.3ms
+onicios-deflate Level(7)	61549	18.788%	OK	12.6ms
+onicios-deflate Level(8)	61549	18.701%	OK	13.9ms
+Stuck-jszip	61549	19.012%	FAILURE	47.05ms
+hiddentao-lzw-async	61549	40.218%	OK	39.95ms
+lzwjs	61549	37.107%	OK	40.25ms
+rozetta-lzw	61549	22.897%	OK	16.95ms
+saw-JS_LZW	61549	22.897%	OK	24.3ms
+jsend	61549	45.344%	FAILURE	22.8ms
+jslzjb	61549	57.749%	OK	4ms
+dankogai-js-deflate Level(4)	111746	18.197%	OK	16.15ms
+dankogai-js-deflate Level(5)	111746	17.805%	OK	18.55ms
+dankogai-js-deflate Level(6)	111746	17.654%	OK	20.9ms
+dankogai-js-deflate Level(7)	111746	17.599%	OK	23.5ms
+dankogai-js-deflate Level(8)	111746	17.520%	OK	24.2ms
+onicios-deflate Level(4)	111746	18.197%	OK	18.65ms
+onicios-deflate Level(5)	111746	17.805%	OK	20.65ms
+onicios-deflate Level(6)	111746	17.654%	OK	22.55ms
+onicios-deflate Level(7)	111746	17.599%	OK	23.4ms
+onicios-deflate Level(8)	111746	17.520%	OK	26.15ms
+Stuck-jszip	111746	17.749%	FAILURE	107.45ms
+hiddentao-lzw-async	111746	37.456%	OK	70.75ms
+lzwjs	111746	32.921%	OK	87.4ms
+rozetta-lzw	111746	19.390%	OK	32.6ms
+saw-JS_LZW	111746	19.390%	OK	45.95ms
+jsend	111746	40.291%	FAILURE	42.9ms
+jslzjb	111746	56.445%	OK	5ms

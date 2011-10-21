@@ -1,0 +1,46 @@
+Library	Data Size	Compression	Success	Time
+dankogai-js-deflate Level(6)	17851	25.752%	OK	3.7
+onicios-deflate Level(6)	17851	25.752%	OK	4.22
+Stuck-jszip	17851	35.270%	FAILURE	14.86
+hiddentao-lzw-async	17851	44.972%	OK	17.84
+lzwjs	17851	48.048%	OK	13.34
+rozetta-lzw	17851	32.435%	OK	6.62
+saw-JS_LZW	17851	0.006%	FAILURE	4.02
+jsend	17851	58.736%	FAILURE	9.42
+jslzjb	17851	60.753%	FAILURE	1.42
+dankogai-js-deflate Level(6)	27984	21.866%	OK	5.94
+onicios-deflate Level(6)	27984	21.866%	OK	6.08
+Stuck-jszip	27984	29.803%	FAILURE	21.44
+hiddentao-lzw-async	27984	43.078%	OK	25.9
+lzwjs	27984	42.885%	OK	20.34
+rozetta-lzw	27984	28.220%	OK	10.68
+saw-JS_LZW	27984	0.004%	FAILURE	6.94
+jsend	27984	52.462%	FAILURE	13.26
+jslzjb	27984	58.448%	FAILURE	1.94
+dankogai-js-deflate Level(6)	42014	20.812%	OK	9.14
+onicios-deflate Level(6)	42014	20.812%	OK	9.26
+Stuck-jszip	42014	28.162%	FAILURE	32.12
+hiddentao-lzw-async	42014	44.235%	OK	37.5
+lzwjs	42014	40.853%	OK	30.82
+rozetta-lzw	42014	25.825%	OK	15.96
+saw-JS_LZW	42014	0.002%	FAILURE	9.5
+jsend	42014	49.929%	FAILURE	19.9
+jslzjb	42014	58.566%	FAILURE	2.68
+dankogai-js-deflate Level(6)	61684	19.193%	OK	13.06
+onicios-deflate Level(6)	61684	19.193%	OK	13.04
+Stuck-jszip	61684	25.880%	FAILURE	46.6
+hiddentao-lzw-async	61684	40.294%	OK	54.48
+lzwjs	61684	37.381%	OK	45.4
+rozetta-lzw	61684	23.050%	OK	23.26
+saw-JS_LZW	61684	0.002%	FAILURE	13.92
+jsend	61684	45.822%	FAILURE	28.38
+jslzjb	61684	58.140%	FAILURE	4.08
+dankogai-js-deflate Level(6)	111927	17.860%	OK	25.34
+onicios-deflate Level(6)	111927	17.860%	OK	25.2
+Stuck-jszip	111927	23.983%	FAILURE	84.6
+hiddentao-lzw-async	111927	37.471%	OK	96.5
+lzwjs	111927	33.086%	OK	82.1
+rozetta-lzw	111927	19.475%	OK	43.52
+saw-JS_LZW	111927	0.001%	FAILURE	24.74
+jsend	111927	40.581%	FAILURE	51.78
+jslzjb	111927	56.935%	FAILURE	7.9

@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>JS Compression libraries comparsion page</title>
+
+    <script type="text/javascript" src="libraries/dankogai-js-deflate/rawdeflate.js"></script>
+    <script type="text/javascript" src="libraries/dankogai-js-deflate/rawinflate.js"></script>
+    <script type="text/javascript" src="libraries/hiddentao-lzw-async/lzw-async.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="libraries/jsend/jsend-2.0.0.source.js"></script>
+    <script type="text/javascript" src="libraries/jslzjb/Iuppiter.js"></script>
+    <script type="text/javascript" src="libraries/lzwjs/lzwjs.js"></script>
+    <!--<script type="text/javascript" src="libraries/nmrugg-LZMA-JS/src/lzma_worker.js"></script>-->
+    <!--<script type="text/javascript" src="libraries/nmrugg-LZMA-JS/src/lzma.js"></script>-->
+    <script type="text/javascript" src="libraries/olle-lz77-kit/src/main/js/lz77.js"></script>
+    <script type="text/javascript" src="libraries/onicios-deflate/deflate.js"></script>
+    <script type="text/javascript" src="libraries/onicios-deflate/inflate.js"></script>
+    <script type="text/javascript" src="libraries/onicios-deflate/base64.js"></script>
+    <script type="text/javascript" src="libraries/onicios-deflate/utf.js"></script>
+    <script type="text/javascript" src="libraries/rozetta-lzw/LZW.js"></script>
+    <script type="text/javascript" src="libraries/saw-JS_LZW/lzw.js"></script>
+    <script type="text/javascript" src="libraries/Stuk-jszip/jszip.js"></script>
+    <script type="text/javascript" src="libraries/Stuk-jszip/jszip-deflate.js"></script>
+
+    <script type="text/javascript" src="src/javascript/SpeedTestResult.js"></script>
+    <script type="text/javascript" src="src/javascript/SpeedTestRunner.js"></script>
+    <script type="text/javascript" src="src/javascript/TestsExecutor.js"></script>
+    <script type="text/javascript" src="src/javascript/AbstractAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/DankogaiDeflateAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/HiddentaoLzwAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/JSendAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/JsLzjbAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/LzwJSAdapter.js"></script>
+    <!--<script type="text/javascript" src="src/adapters/NmruggLzmaAdapter.js"></script>-->
+    <script type="text/javascript" src="src/javascript/adapters/OlleLz77Adapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/OniciosDeflateAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/RozettaLzwAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/SawLzwAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/adapters/StuckJSZipAdapter.js"></script>
+    <script type="text/javascript" src="src/javascript/render/SpeedTestTableRenderer.js"></script>
+    <script type="text/javascript" src="src/javascript/render/SpeedTestTextRenderer.js"></script>
+    <script type="text/javascript" src="src/javascript/render/FeedbackRenderer.js"></script>
+    <script type="text/javascript" src="data/original/originalData1.js"></script>
+    <script type="text/javascript" src="data/original/originalData2.js"></script>
+    <script type="text/javascript" src="data/original/originalData3.js"></script>
+    <script type="text/javascript" src="data/original/originalData4.js"></script>
+    <script type="text/javascript" src="data/original/originalData5.js"></script>
+
+    <style type="text/css">
+        td {
+            text-align: right;
+            padding: 10px;
+        }
+
+        div {
+            font-family: "Courier New";
+            font-size: 10pt;
+        }
+    </style>
+</head>
+<body>
+<div>Results:</div>
+<FORM NAME="f">
+Input<BR>
+<TEXTAREA NAME="source" ROWS=4 COLS=84>test</TEXTAREA><BR><BR>
+<INPUT TYPE=BUTTON VALUE="Compress" ONCLICK="doit()">
+<HR>
+
+
+</FORM>
+
+<div id="results_container">
+    <div id="results_div"></div>
+</div>
+<script type="text/javascript" src="src/javascript/QualityMain.js"></script>
+</body>
+</html>
