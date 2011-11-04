@@ -3543,8 +3543,6 @@ LZMA = (function ()
         
         this$static.d = $LZMAByteArrayDecompressor(new LZMAByteArrayDecompressor(), data);
         
-        update_progress(0, callback_num);
-        
         function do_action()
         {
             start = (new Date).getTime();

@@ -1,12 +1,9 @@
 package com.vmykhailyk.compression.deflate;
 
-import com.vmykhailyk.compression.CompressorInterface;
 import org.apache.commons.codec.binary.Base64;
 
 import java.io.ByteArrayOutputStream;
-import java.io.UnsupportedEncodingException;
 import java.util.zip.DataFormatException;
-import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
 /**
@@ -32,11 +29,6 @@ public class DeflateDecompressor {
             byte[] buffer = new byte[1024];
             while (!decompressor.finished()) {
                 int dataLength = decompressor.inflate(buffer);
-                System.out.println("eeee: "+dataLength);
-                if (dataLength == 0) {
-                    System.out.println("eeee: "+decompressor.needsInput());
-                    return new String(outputStream.toByteArray(), "UTF-8");
-                }
                 outputStream.write(buffer, 0, dataLength);
             }
 

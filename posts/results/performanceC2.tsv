@@ -1,0 +1,16 @@
+Library	Data Size	Compression	Success	Time
+jslzjb	17851	60.753%	FAILURE	2.8
+nmrugg-LZMA-JS Level(6)	17851	24.514%	OK	1223.7
+olle-lz77-kit	17851	84.819%	OK	213.9
+jslzjb	27984	58.448%	FAILURE	1.1
+nmrugg-LZMA-JS Level(6)	27984	20.622%	OK	1482.2
+olle-lz77-kit	27984	85.199%	OK	321.4
+jslzjb	42014	58.566%	FAILURE	1.6
+nmrugg-LZMA-JS Level(6)	42014	19.284%	OK	1688.8
+olle-lz77-kit	42014	84.831%	OK	487
+jslzjb	61684	58.140%	FAILURE	2.5
+nmrugg-LZMA-JS Level(6)	61684	17.530%	OK	2040.1
+olle-lz77-kit	61684	85.228%	OK	707.2
+jslzjb	111927	56.935%	FAILURE	4.3
+nmrugg-LZMA-JS Level(6)	111927	15.860%	OK	3052.9
+olle-lz77-kit	111927	85.609%	OK	1295.5

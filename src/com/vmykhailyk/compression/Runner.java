@@ -46,9 +46,10 @@ public class Runner {
         System.out.println(compressor.compress("<>/!@#$%^&*()_-+="));
         System.out.println(compressor.compress("QWEкенгшщзхїФІВАПРОЛmnb"));
         System.out.println(compressor.compress("<html>abc</html>"));
+*/
+        printBytes(Base64.decodeBase64(compressor.compress("<html>abc</html>")));
         printBytes(Base64.decodeBase64(compressor.compress("фіва")));
         printBytes(Base64.decodeBase64("eNq72HJx2oVNFzYAABmmBb8="));
-*/
     }
 
     private static void printValue(String value) {
