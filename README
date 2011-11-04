@@ -1,5 +1,6 @@
-*Description*
-This project is code base for a series of blog posts about "JavaScript compression libraries":http://problemsolverblog.blogspot.com/2011/10/javascript-compression-libraries.html
+This project is code base for a series of blog posts about JavaScript compression libraries: http://problemsolverblog.blogspot.com/2011/10/javascript-compression-libraries.html
 
-It doesn't contain any usefull code. All 3rd party code libraries in this repository is property of their authors.
-Every 3rd party dir has url.txt file which contain link to the authors site.
+It contain code wrappers, test procedures and other data that was used during preparing of blog entries. 
+Also it contains 3rd party libraries that was used during investigateion. All 3rd party code libraries 
+in this repository is property of their authors. Every lib has url.txt file which contain link to the authors site.
+Please refer to original author of the lib if you want to use it anywhere.
