@@ -1,5 +1,6 @@
 package com.vmykhailyk.compression.deflate;
 
+import com.vmykhailyk.compression.DecompresorInterface;
 import org.apache.commons.codec.binary.Base64;
 
 import java.io.ByteArrayOutputStream;
@@ -11,7 +12,7 @@ import java.util.zip.Inflater;
  * Date: 15.10.11
  * Time: 16:17
  */
-public class DeflateDecompressor {
+public class DeflateDecompressor implements DecompresorInterface {
     private Inflater decompressor;
     private ByteArrayOutputStream outputStream;
 

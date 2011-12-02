@@ -15,7 +15,7 @@ import java.util.zip.Adler32;
  * Date: 15.10.11
  * Time: 16:13
  */
-public class Runner {
+public class DeflateRunner {
     public static void main(String[] args) throws UnsupportedEncodingException {
 //        compressDeflate();
         testCompression();
@@ -47,9 +47,9 @@ public class Runner {
         System.out.println(compressor.compress("QWEкенгшщзхїФІВАПРОЛmnb"));
         System.out.println(compressor.compress("<html>abc</html>"));
 */
-        printBytes(Base64.decodeBase64(compressor.compress("<html>abc</html>")));
-        printBytes(Base64.decodeBase64(compressor.compress("фіва")));
-        printBytes(Base64.decodeBase64("eNq72HJx2oVNFzYAABmmBb8="));
+        Utils.printBytes(Base64.decodeBase64(compressor.compress("<html>abc</html>")));
+        Utils.printBytes(Base64.decodeBase64(compressor.compress("фіва")));
+        Utils.printBytes(Base64.decodeBase64("eNq72HJx2oVNFzYAABmmBb8="));
     }
 
     private static void printValue(String value) {
@@ -72,21 +72,6 @@ public class Runner {
 
     }
 
-    private static long adler32(byte[] data)
-{
-    long MOD_ADLER = 65521;
-    long a = 1, b = 0;
-    int index;
-
-    /* Process each byte of the data in order */
-    for (index = 0; index < data.length; ++index)
-    {
-        a = (a + data[index]) % MOD_ADLER;
-        b = (b + a) % MOD_ADLER;
-    }
-
-    return (b << 16) | a;
-}
 
     public static byte[] longToByteArray(long data) {
         return new byte[]{
@@ -97,18 +82,6 @@ public class Runner {
         };
     }
 
-    private static void printBytes(byte[] bytes) {
-        for (int i = 0; i < bytes.length; i++) {
-            byte aByte = bytes[i];
-            String hex = Integer.toHexString(0xFF & aByte);
-            if (hex.length() == 1) {
-                // could use a for loop, but we're only dealing with a single byte
-                hex = '0'+hex;
-            }
-            System.out.print(hex + " ");
-        }
-        System.out.println();
-    }
 
     private static void compressDeflate() {
         int compresionLevel = 0;
