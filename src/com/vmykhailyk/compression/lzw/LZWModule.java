@@ -5,22 +5,26 @@ package com.vmykhailyk.compression.lzw;
  * Date: 01.12.11
  * Time: 16:05
  */
+
 import com.vmykhailyk.compression.CompressorInterface;
 import com.vmykhailyk.compression.DecompresorInterface;
 import org.apache.commons.codec.binary.Base64;
 
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 import java.nio.IntBuffer;
 import java.util.*;
 
 public class LZWModule implements DecompresorInterface, CompressorInterface {
-    /** Compress a string to a list of output symbols. */
+    /**
+     * Compress a string to a list of output symbols.
+     */
     private List<Integer> compressData(String uncompressed) {
         // Build the dictionary.
         int dictSize = 256;
-        Map<String,Integer> dictionary = new HashMap<String,Integer>();
+        Map<String, Integer> dictionary = new HashMap<String, Integer>();
         for (int i = 0; i < 256; i++)
-            dictionary.put("" + (char)i, i);
+            dictionary.put("" + (char) i, i);
 
         String w = "";
         List<Integer> result = new ArrayList<Integer>();
@@ -42,15 +46,17 @@ public class LZWModule implements DecompresorInterface, CompressorInterface {
         return result;
     }
 
-    /** Decompress a list of output ks to a string. */
+    /**
+     * Decompress a list of output ks to a string.
+     */
     public String decompressData(List<Integer> compressed) {
         // Build the dictionary.
         int dictSize = 256;
-        Map<Integer,String> dictionary = new HashMap<Integer,String>();
+        Map<Integer, String> dictionary = new HashMap<Integer, String>();
         for (int i = 0; i < 256; i++)
-            dictionary.put(i, "" + (char)i);
+            dictionary.put(i, "" + (char) i);
 
-        String w = "" + (char)(int)compressed.remove(0);
+        String w = "" + (char) (int) compressed.remove(0);
         String result = w;
         for (int k : compressed) {
             String entry;
@@ -72,22 +78,49 @@ public class LZWModule implements DecompresorInterface, CompressorInterface {
     }
 
     public String decompress(String data) {
-        ByteBuffer buffer = ByteBuffer.wrap(Base64.decodeBase64(data));
-        IntBuffer intBuffer = buffer.asIntBuffer();
-        ArrayList<Integer> result = new ArrayList<Integer>();
-        while (intBuffer.hasRemaining()) {
-            result.add(intBuffer.get());
-        }
+        try {
+            String[] intsAsString = data.split(",");
+            ArrayList<Integer> integers = new ArrayList<Integer>();
+            for (String anIntsAsString : intsAsString) {
+                integers.add(Integer.parseInt(anIntsAsString));
+            }
 
-        return decompressData(result);
+            String decompressed = decompressData(integers);
+            return new String(getCharsAsBytes(decompressed), "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+
+    private byte[] getCharsAsBytes(String decompressed) {
+        int length = decompressed.length();
+        ByteBuffer buffer = ByteBuffer.allocate(length);
+        for (int i = 0; i < length; i++) {
+            buffer.put((byte) decompressed.codePointAt(i));
+        }
+        return buffer.array();
     }
 
     public String compress(String data) {
-        List<Integer> integers = compressData(data);
-        ByteBuffer buffer = ByteBuffer.allocate(integers.size() * 4);
-        for (Integer integer : integers) {
-            buffer.putInt(integer);
+        try {
+            byte[] bytes = data.getBytes("UTF-8");
+            data = convertToString(bytes);
+            List<Integer> integers = compressData(data);
+            String stringArray = integers.toString();
+            String trimmed = stringArray.substring(1, stringArray.length() - 1);
+            return trimmed.replace(", ", ",");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
         }
-        return Base64.encodeBase64String(buffer.array());
+        return "";
+    }
+
+    private String convertToString(byte[] bytes) throws UnsupportedEncodingException {
+        StringBuilder builder = new StringBuilder();
+        for (byte aByte : bytes) {
+            builder.append((char) (0xFF & aByte));
+        }
+        return builder.toString();
     }
 }

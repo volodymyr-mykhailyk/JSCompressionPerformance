@@ -18,7 +18,7 @@ import java.util.zip.Adler32;
 public class LZWRunner {
     public static void main(String[] args) throws UnsupportedEncodingException {
         LZWModule module = new LZWModule();
-        String compressed = module.compress("test");
+        String compressed = module.compress("пример");
         System.out.println(compressed);
         String uncompressed = module.decompress(compressed);
         System.out.println(uncompressed);
